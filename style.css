@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  background-image: linear-gradient(to right, #121c6d, #ed7919);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: white;
+}
+
+h1 span {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.password_box {
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+  text-align: start;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.length-selector {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.length-selector label {
+  font-size: 18px;
+  color: white;
+}
+
+.length-selector input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: white 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+img {
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover{
+  background-color: #ed7919;
+  color: black;
+  border: black 2px solid;
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    display: none;
+  }
+}

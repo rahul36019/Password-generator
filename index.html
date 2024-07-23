@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>password generator</title>
+
+  <link rel="icon" href="./img/p_gen_logo2.png" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <img src="./img/p_gen_logo2.png" alt="">
+    <h1>Generate a Random <br>
+      <span>Password here</span></h1>
+
+    <div class="password_box">
+      you can copy the password by clicking here
+    </div>
+    
+    <div class="length-selector">
+      <label for="length">Password Length: <span id="length-value">10</span></label>
+      <input type="range" id="length" name="length" min="8" max="16" value="10">
+    </div>
+
+    <button class="btn">Generate Password</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
